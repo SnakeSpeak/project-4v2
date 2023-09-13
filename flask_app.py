@@ -186,8 +186,8 @@ def CRSS_call():
 
     # Query from CRSS_data table
     CRSS_results = session.query(CRSS_data.BODY_TYP, CRSS_data.SPEEDREL, CRSS_data.AGE, CRSS_data.SEX, \
-                                  CRSS_data.DRUGS, CRSS_data.MAN_COLL, CRSS_data.WEATHER, CRSS_data.MONTH, \
-                                    CRSS_data.HOUR, CRSS_data.DAY_WEEK, CRSS_data.ALCOHOL).all()
+                                  CRSS_data.DRUGS, CRSS_data.INJ_SEV, CRSS_data.MAN_COLL, CRSS_data.WEATHER, \
+                                    CRSS_data.MONTH, CRSS_data.HOUR, CRSS_data.DAY_WEEK, CRSS_data.ALCOHOL).all()
         
     # Close session
     session.close
@@ -196,7 +196,7 @@ def CRSS_call():
     CRSS_list = []
 
     # For loop through the query results
-    for BODY_TYP, SPEEDREL, AGE, SEX, DRUGS, \
+    for BODY_TYP, SPEEDREL, AGE, SEX, DRUGS, INJ_SEV, \
         MAN_COLL, WEATHER, MONTH, HOUR, DAY_WEEK, ALCOHOL in CRSS_results:
         # Open empty dicitionary
         CRSS_dict = {}
@@ -207,6 +207,7 @@ def CRSS_call():
         CRSS_dict["age"] = AGE
         CRSS_dict["sex"] = SEX
         CRSS_dict["drugs"] = DRUGS
+        CRSS_dict["inj_sev"] = INJ_SEV
         CRSS_dict["collision"] = MAN_COLL
         CRSS_dict["weather"] = WEATHER
         CRSS_dict["month"] = MONTH

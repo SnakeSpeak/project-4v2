@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang = "en"
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dash of Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #map {
+            height: 600px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dash of Data</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our own CSS stylesheet -->
+    <!-- <link rel="stylesheet" href="styles.css" media="screen"> -->
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- polyfill.io is the library for using newer JavaScript features (such as Object.assign) in older browers. -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="js/leaflet.extra-markers.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="leaflet.extra-markers.min.css">
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- Marker cluster JavaScript code -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+
+    <!-- Marker cluster CSS -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<canvas id="canvas-basic"></canvas>
+
+<body id = "custom-bg">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="ion-android-car"></i></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="page1.html">Page 1</a></li>
+                    <li><a href="page2.html">Page 2</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <canvas id="canvas-basic"></canvas>
+
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-sm-12 jumbotron text-center">
+                <h1>Weather or Not: Shedding Light on 2021 State Accidents with a Dash of Data</h1>
+                <h2 id="text">Select the state with the dropdown, and filters in the map.</h2>
+                <h3>State</h3>
+                <select id="selDataset1" onchange="newState(this.value)" style = "height:40px;font-size:25px";></select>
+                <p>Population Estimate 2021:</p>
+                <strong><span id = "popEst"></span></strong>
+            </div>
+        </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-4" style = "height:200 px;">
+                <div class = "well text-center align-item-center">
+                    <h4># of Accidents in Certain Lighting in <strong><span id = "stateName"></span></strong></h4>
+                    <div id = "chart"></div>
+                </div>
+            </div>
+            <div class = "col-sm-6" style = "height: 200 px;">
+                <div class="well text-center">
+                    <h4>Frequency of Accident Types in <strong><span id = "stateName2"></span></strong></h4>
+                    <div id = "accident"></div>
+                </div>
+            </div> 
+            <div class="col-sm-1"></div>
+        <div class = "row">
+            <div class="col-sm-1"></div>
+            <div class = "col-sm-10 col-sm-offset-1" style="height: 600 px;">
+                <div class="well text-center">
+                    <h4>Cluster Map of Weather Conditions in <strong><span id = "stateName3"></span></strong></h4>
+                    <div id = "map"></div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+      </div>
+    </div>
+    <!--Scripts will be placed below, can be commented out-->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="js/ed-app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
+    <script src="js/lb-app2.js"></script>
+    <script src="js/accident_graph_YJL.js"></script>
+    <script src="js/init.js"></script>
+    <script src="granim.js-2.0.0/dist/granim.min.js"></script>
+    <script src="js/granim_YJL.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>

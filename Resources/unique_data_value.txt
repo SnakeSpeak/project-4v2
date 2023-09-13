@@ -1,0 +1,66 @@
+Unique State Names:
+['Alabama' 'Alaska' 'Arizona' 'Arkansas' 'California' 'Colorado'
+ 'Connecticut' 'Delaware' 'District of Columbia' 'Florida' 'Georgia'
+ 'Hawaii' 'Idaho' 'Illinois' 'Indiana' 'Iowa' 'Kansas' 'Kentucky'
+ 'Louisiana' 'Maine' 'Maryland' 'Massachusetts' 'Michigan' 'Minnesota'
+ 'Mississippi' 'Missouri' 'Montana' 'Nebraska' 'Nevada' 'New Hampshire'
+ 'New Jersey' 'New Mexico' 'New York' 'North Carolina' 'North Dakota'
+ 'Ohio' 'Oklahoma' 'Oregon' 'Pennsylvania' 'Rhode Island' 'South Carolina'
+ 'South Dakota' 'Tennessee' 'Texas' 'Utah' 'Vermont' 'Virginia'
+ 'Washington' 'West Virginia' 'Wisconsin' 'Wyoming']
+-----------------------------
+Unique Weather Conditions:
+['Rain' 'Clear' 'Cloudy' 'Fog, Smog, Smoke' 'Reported as Unknown'
+ 'Severe Crosswinds' 'Snow' 'Not Reported' 'Freezing Rain or Drizzle'
+ 'Other' 'Blowing Sand, Soil, Dirt' 'Blowing Snow' 'Sleet or Hail']
+-----------------------------
+Unique Lighting Conditions:
+['Dark - Not Lighted' 'Daylight' 'Dark - Lighted' 'Dawn' 'Dusk'
+ 'Dark - Unknown Lighting' 'Reported as Unknown' 'Not Reported' 'Other']
+Unique State Names:
+Unique State Names:
+['Alabama' 'Alaska' 'Arizona' 'Arkansas' 'California' 'Colorado'
+ 'Connecticut' 'Delaware' 'District of Columbia' 'Florida' 'Georgia'
+ 'Hawaii' 'Idaho' 'Illinois' 'Indiana' 'Iowa' 'Kansas' 'Kentucky'
+ 'Louisiana' 'Maine' 'Maryland' 'Massachusetts' 'Michigan' 'Minnesota'
+ 'Mississippi' 'Missouri' 'Montana' 'Nebraska' 'Nevada' 'New Hampshire'
+ 'New Jersey' 'New Mexico' 'New York' 'North Carolina' 'North Dakota'
+ 'Ohio' 'Oklahoma' 'Oregon' 'Pennsylvania' 'Rhode Island' 'South Carolina'
+ 'South Dakota' 'Tennessee' 'Texas' 'Utah' 'Vermont' 'Virginia'
+ 'Washington' 'West Virginia' 'Wisconsin' 'Wyoming']
+-----------------------------
+Unique Weather Conditions:
+['Rain' 'Clear' 'Cloudy' 'Fog, Smog, Smoke' 'Reported as Unknown'
+ 'Severe Crosswinds' 'Snow' 'Not Reported' 'Freezing Rain or Drizzle'
+ 'Other' 'Blowing Sand, Soil, Dirt' 'Blowing Snow' 'Sleet or Hail']
+-----------------------------
+Unique Lighting Conditions:
+['Dark - Not Lighted' 'Daylight' 'Dark - Lighted' 'Dawn' 'Dusk'
+ 'Dark - Unknown Lighting' 'Reported as Unknown' 'Not Reported' 'Other']
+-----------------------------
+Unique Accident Conditions:
+['Motor Vehicle In-Transport' 'Concrete Traffic Barrier' 'Pedestrian'
+ 'Ditch' 'Rollover/Overturn' 'Parked Motor Vehicle' 'Mail Box' 'Culvert'
+ 'Fence' 'Tree (Standing Only)' 'Guardrail Face'
+ 'Utility Pole/Light Support' 'Traffic Sign Support' 'Ground'
+ 'Non-Motorist on Personal Conveyance' 'Embankment'
+ 'Other Object (not fixed)' 'Guardrail End' 'Wall' 'Other Fixed Object'
+ 'Curb' 'Boulder' 'Building' 'Railway Vehicle'
+ 'Bridge Rail (Includes parapet)' 'Bridge Pier or Support' 'Pedalcyclist'
+ 'Cable Barrier' 'Live Animal' 'Fell/Jumped from Vehicle'
+ 'Motor Vehicle In-Transport Strikes or is Struck by Cargo, Persons or Objects Set-in-Motion from/by Another Motor Vehicle In Transport'
+ 'Shrubbery' 'Working Motor Vehicle' 'Reported as Unknown'
+ 'Road Vehicle on Rails' 'Fire Hydrant' 'Impact Attenuator/Crash Cushion'
+ 'Post, Pole or Other Supports' 'Bridge Overhead Structure'
+ 'Other Traffic Barrier' 'Traffic Signal Support' 'Fire/Explosion'
+ 'Unknown Fixed Object' 'Other Non-Collision'
+ 'Cargo/Equipment Loss, Shift, or Damage [harmful]'
+ 'Unknown Object Not Fixed' 'Thrown or Falling Object'
+ 'Immersion or Partial Immersion'
+ 'Pavement Surface Irregularity (Ruts, Potholes, Grates, etc.)'
+ 'Injured In Vehicle (Non-Collision)' 'Snow Bank'
+ 'Ridden Animal or Animal Drawn Conveyance'
+ 'Object That Had Fallen From Motor Vehicle In-Transport'
+ 'Harmful Event, Details Not Reported'
+ 'Motor Vehicle in Motion Outside the Trafficway'
+ 'Jackknife (harmful to this vehicle)']

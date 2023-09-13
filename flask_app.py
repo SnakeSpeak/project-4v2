@@ -10,7 +10,7 @@ from flask_cors import CORS
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///SQLiteDatabase/Accidents_2021.db")
+engine = create_engine("sqlite:///SQLiteDatabase/Accidents_Database.db")
 
 # reflect an existing database into a new model
 Base = automap_base()
@@ -21,6 +21,7 @@ Base.prepare(autoload_with=engine)
 # Defining accident and population
 accident = Base.classes.accidents
 population = Base.classes.population
+CRSS_data = Base.classes.CRSS_data
 
 ################################################
 # Flask Setup 
@@ -44,6 +45,7 @@ def welcome():
         f"/api/v1.0/weather_conditions<br>"
         f"/api/v1.0/accident_type<br>"
         f"/api/v1.0/population<br>"
+        f"/api/v1.0/CRSS_data<br>"
         )
 
 
@@ -175,6 +177,49 @@ def population_call():
     
     # Jsonify the output
     return jsonify(population_list)
+
+
+@app.route("/api/v1.0/CRSS_data")
+def CRSS_call():
+    # Open session
+    session = Session(engine)
+
+    # Query from CRSS_data table
+    CRSS_results = session.query(CRSS_data.BODY_TYP, CRSS_data.SPEEDREL, CRSS_data.AGE, CRSS_data.SEX, \
+                                  CRSS_data.DRUGS, CRSS_data.MAN_COLL, CRSS_data.WEATHER, CRSS_data.MONTH, \
+                                    CRSS_data.HOUR, CRSS_data.DAY_WEEK, CRSS_data.ALCOHOL).all()
+        
+    # Close session
+    session.close
+
+    # Open empty CRSS_dataing list to record output
+    CRSS_list = []
+
+    # For loop through the query results
+    for BODY_TYP, SPEEDREL, AGE, SEX, DRUGS, \
+        MAN_COLL, WEATHER, MONTH, HOUR, DAY_WEEK, ALCOHOL in CRSS_results:
+        # Open empty dicitionary
+        CRSS_dict = {}
+
+        # Write output into dictionary
+        CRSS_dict["body_type"] = BODY_TYP
+        CRSS_dict["speed"] = SPEEDREL
+        CRSS_dict["age"] = AGE
+        CRSS_dict["sex"] = SEX
+        CRSS_dict["drugs"] = DRUGS
+        CRSS_dict["collision"] = MAN_COLL
+        CRSS_dict["weather"] = WEATHER
+        CRSS_dict["month"] = MONTH
+        CRSS_dict["hour"] = HOUR
+        CRSS_dict["day_of_week"] = DAY_WEEK
+        CRSS_dict["alcohol"] = ALCOHOL
+
+
+        # Append dictionary to CRSS_dataing list
+        CRSS_list.append(CRSS_dict)
+    
+    # Jsonify the output
+    return jsonify(CRSS_list)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,263 @@
+﻿.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+	background-color: #008080;
+	color: #FFF;
+	padding: 1% 0;
+	font-size: 1.2em;
+	border: 0;
+}
+
+.navbar-brand {
+	float: left;
+	min-height: 55px;
+	padding: 0 15px 15px;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+	color: #FFF;
+	background-color: #008080;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #D5D5D5;
+}
+
+.bg-image {
+	background-position: center center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	background-image: url('img/truck-crash.gif');
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: -1;
+}
+ 
+.bg-image::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.content {
+	padding-top: 60vh;
+}
+
+body {
+    background-color: #FFF;
+	min-height: 100vh; 
+}
+
+body.d-flex.flex-column.h-100 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.white-background-wrapper {
+    background-color: #FFF;
+    z-index: 1;
+    flex: 1 0 auto; 
+}
+
+footer {
+    flex-shrink: 0; 
+}
+
+
+.item {
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+}
+
+.img-fluid {
+    max-width: 100%;  
+    height: auto;     
+}
+
+.carousel-caption{
+	top: 50%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+
+.btn{
+	font-size: 18px;
+	color: #FFF;
+	padding: 12px 22px;
+	background: #008080;
+	border: 2px solid #FFF;
+}
+
+.container{
+	margin: 4% auto;
+	background-color: #FFF;
+}
+
+#icon {
+	max-width:200px;
+	margin: 1% auto;
+}
+
+footer {
+	margin:0;
+	width: 100%;
+	background-color: #008080;
+	padding: 3%;
+	color:#FFF;
+}
+
+body.d-flex.flex-column.h-100 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.fas, .far, .fab {
+    padding: 15px;
+    font-size: 25px;
+    color: #FFF;
+}
+
+footer .fas, footer .far, footer .fab {
+    color: #FFF;
+}
+
+.fab.fa-html5 {
+    color: #FF5733; 
+}
+
+.fab.fa-bootstrap {
+    color: #563D7C;
+}
+
+.fab.fa-css3-alt {
+    color: #2965F1;
+}
+
+.fas.fa-database, .far.fa-database, .fab.fa-database {
+    font-size: 10em;
+    text-decoration: none;
+    color: #008080;
+}
+
+.fas.fa-brain, .far.fa-brain, .fab.fa-brain {
+    font-size: 10em;
+    text-decoration: none;
+    color: #008080;
+}
+
+.fas.fa-laptop-code, .far.fa-laptop-code, .fab.fa-laptop-code {
+    font-size: 10em;
+    text-decoration: none;
+    color: #008080;
+}
+
+.fas.fa-database:hover, .far.fa-database:hover, .fab.fa-database:hover {
+    color: #008080; 
+    text-decoration: none;
+}
+
+.fas.fa-brain:hover, .far.fa-brain:hover, .fab.fa-brain:hover {
+    color: #008080;  
+    text-decoration: none;
+}
+
+.fas.fa-laptop-code:hover, .far.fa-laptop-code:hover, .fab.fa-laptop-code:hover {
+    color: #008080;  
+    text-decoration: none;
+}
+
+.social-icons .far.fa-envelope, .social-icons .fas.fa-envelope {
+    color: #D5D5D5; 
+}
+
+.social-icons .fab.fa-github {
+    color: #D5D5D5; 
+}
+
+.social-icons .fab.fa-linkedin {
+    color: #D5D5D5; 
+}
+
+.fas:hover, .far:hover, .fab:hover {
+    color: #D5D5D5;
+    text-decoration: none;
+}
+
+#popEst {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.legend {
+	padding: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 18px;
+	color: #555;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .legend .rain {
+	color: #6495ed;
+  }
+  
+  .legend .clear {
+	color: #ffd700;
+  }
+  
+  .legend .cloudy {
+	color: #000000;
+  }
+  
+  .legend .snow {
+	color: #ff69b4;
+  }
+  
+  .legend .other {
+	color: #808080;
+  }
+
+@media(max-width: 900px) {
+	.fa{
+		font-size: 20px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 600px){
+	.carousel-caption {
+		display: none;
+	}
+	#icon{
+		max-width: 150px;
+	}
+	h4{
+		font-size: 1.7em;
+	}
+}

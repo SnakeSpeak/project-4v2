@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather or Not</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="img/car.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="injury_prediction.html">Injury Prediction</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="container" id="injuryPrediction">
+        <h2>Injury Prediction</h2>
+        <form>
+            <div class="form-group">
+                <label>Car Body Type</label>
+                <select class="form-control" name="car_body_type">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">Convertible</option>
+                    <option value="2">2-Door Sedan, Hardtop, Coupe</option>
+                    <option value="3">3-Door/2-Door Hatchback</option>
+                    <option value="4">4-Door Sedan, Hardtop</option>
+                    <option value="5">5-Door/4-Door Hatchback</option>
+                    <option value="6">Station Wagon (Excluding Van- and Truck-Based)</option>
+                    <option value="20">Minivan</option>
+                    <option value="34">Pickup</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Sex</label>
+                <select class="form-control" name="sex">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Age</label>
+                <select class="form-control" name="sex">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">0-9</option>
+                    <option value="2">10-19</option>
+                    <option value="3">20-29</option>
+                    <option value="4">30-39</option>
+                    <option value="5">40-49</option>
+                    <option value="6">50-59</option>
+                    <option value="7">60-69</option>
+                    <option value="8">70-79</option>
+                    <option value="9">80-89</option>
+                    <option value="10">90-99</option>
+                    <option value="11">100-109</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Manner of Collision</label>
+                <select class="form-control" name="manner_of_collision">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">Front-to-Rear</option>
+                    <option value="2">Front-to-Front</option>
+                    <option value="6">Angle</option>
+                    <option value="7">Sideswipe-Same Direction</option>
+                    <option value="8">Sideswipe - Opposite Direction</option>
+                    <option value="9">Rear-to-Side</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Weather</label>
+                <select class="form-control" name="weather">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">Clear</option>
+                    <option value="2">Rain</option>
+                    <option value="4">Snow</option>
+                    <option value="10">Cloudy</option>
+                    <option value="8">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Speed</label>
+                <select class="form-control" name="speed">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="0">No</option>
+                    <option value="2">Yes, Racing</option>
+                    <option value="3">Yes, Exceeded Speed Limit</option>
+                    <option value="4">Yes, Too Fast for Conditions</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Hour</label>
+                <select class="form-control" name="day_of_the_week">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="0">12AM</option>
+                    <option value="1">1AM</option>
+                    <option value="2">2AM</option>
+                    <option value="3">3AM</option>
+                    <option value="4">4AM</option>
+                    <option value="5">5AM</option>
+                    <option value="6">6AM</option>
+                    <option value="7">7AM</option>
+                    <option value="8">8AM</option>
+                    <option value="9">9AM</option>
+                    <option value="10">10AM</option>
+                    <option value="11">11AM</option>
+                    <option value="12">12PM</option>
+                    <option value="13">1PM</option>
+                    <option value="14">2PM</option>
+                    <option value="15">3PM</option>
+                    <option value="16">4PM</option>
+                    <option value="17">5PM</option>
+                    <option value="18">6PM</option>
+                    <option value="19">7PM</option>
+                    <option value="20">8PM</option>
+                    <option value="21">9PM</option>
+                    <option value="22">10PM</option>
+                    <option value="23">11PM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Day of the Week</label>
+                <select class="form-control" name="day_of_the_week">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">Sunday</option>
+                    <option value="2">Monday</option>
+                    <option value="3">Tuesday</option>
+                    <option value="4">Wednesday</option>
+                    <option value="5">Thursday</option>
+                    <option value="6">Friday</option>
+                    <option value="7">Saturday</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Month</label>
+                <select class="form-control" name="month">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Predict</button>
+        </form>
+    </div>
+    
+    
+    <footer class="container-fluid text-center">
+        <div class="row">
+            <div class="col-sm-6">
+                <h3>Weather or Not
+                <i class="fas fa-car" style="font-size: 45px;"></i></h3>
+            </div> 
+            <div class="col-sm-6">
+                <h3>Connect</h3>
+                <a href="#" class="fab fa-github"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-google"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>                   
+        </div>
+    </footer>   
+
+
+</body>
+</html>

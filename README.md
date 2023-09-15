@@ -22,3 +22,5 @@ Granim.js JavaScript Library:</br>
 https://sarcadass.github.io/granim.js/</br>
 Leaflet ClusterMap:</br>
 https://www.youtube.com/watch?v=6_w-Mb_78iY&list=PLm76kc4VPkn27kRYq-58COO5r5bQdrKyy</br>
+Changing the order of columns:</br>
+https://stackoverflow.com/questions/13148429/how-to-change-the-order-of-dataframe-columns</br>

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
   <link rel="stylesheet" href="style.css">
   <style>
 
@@ -41,7 +42,7 @@
         <form>
             <div class="form-group">
                 <label>Car Body Type</label>
-                <select class="form-control" name="car_body_type">
+                <select class="form-control" id="car_body_type">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">Convertible</option>
                     <option value="2">2-Door Sedan, Hardtop, Coupe</option>
@@ -55,7 +56,7 @@
             </div>
             <div class="form-group">
                 <label>Sex</label>
-                <select class="form-control" name="sex">
+                <select class="form-control" id="sex">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">Male</option>
                     <option value="2">Female</option>
@@ -63,7 +64,7 @@
             </div>
             <div class="form-group">
                 <label>Age</label>
-                <select class="form-control" name="sex">
+                <select class="form-control" id="age">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">0-9</option>
                     <option value="2">10-19</option>
@@ -80,7 +81,7 @@
             </div>
             <div class="form-group">
                 <label>Manner of Collision</label>
-                <select class="form-control" name="manner_of_collision">
+                <select class="form-control" id="manner_of_collision">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">Front-to-Rear</option>
                     <option value="2">Front-to-Front</option>
@@ -92,7 +93,7 @@
             </div>
             <div class="form-group">
                 <label>Weather</label>
-                <select class="form-control" name="weather">
+                <select class="form-control" id="weather">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">Clear</option>
                     <option value="2">Rain</option>
@@ -103,7 +104,7 @@
             </div>
             <div class="form-group">
                 <label>Speed</label>
-                <select class="form-control" name="speed">
+                <select class="form-control" id="speed">
                     <option value="" disabled selected>Select one</option>
                     <option value="0">No</option>
                     <option value="2">Yes, Racing</option>
@@ -113,7 +114,7 @@
             </div>
             <div class="form-group">
                 <label>Hour</label>
-                <select class="form-control" name="day_of_the_week">
+                <select class="form-control" id="hour">
                     <option value="" disabled selected>Select one</option>
                     <option value="0">12AM</option>
                     <option value="1">1AM</option>
@@ -143,7 +144,7 @@
             </div>
             <div class="form-group">
                 <label>Day of the Week</label>
-                <select class="form-control" name="day_of_the_week">
+                <select class="form-control" id="day_of_the_week">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">Sunday</option>
                     <option value="2">Monday</option>
@@ -156,7 +157,7 @@
             </div>
             <div class="form-group">
                 <label>Month</label>
-                <select class="form-control" name="month">
+                <select class="form-control" id="month">
                     <option value="" disabled selected>Select one</option>
                     <option value="1">January</option>
                     <option value="2">February</option>
@@ -172,15 +173,23 @@
                     <option value="12">December</option>
                 </select>
             </div>
-            <button class="btn btn-primary" type="submit">Predict</button>
+            <button type="button" onclick = "predict()">Predict</button>
         </form>
+        <div class="row">
+            <h4>No Apparent Injury: <strong><span id="class1"></span></strong></h4>
+            
+            <h4>Possible Injury: <strong><span id="class2"></span></strong></h4>
+            <h4>Suspected Minor Injury: <strong><span id="class3"></span></strong></h4>
+            <h4>suspected Major Injury: <strong><span id="class4"></span></strong></h4>
+            <h4>Fatal Injury: <strong><span id="class5"></span></strong></h4>
+        </div>
     </div>
     
     
     <footer class="container-fluid text-center">
         <div class="row">
             <div class="col-sm-6">
-                <h3>Weather or Not
+                <h4>Weather or Not
                 <i class="fas fa-car" style="font-size: 45px;"></i></h3>
             </div> 
             <div class="col-sm-6">
@@ -193,7 +202,11 @@
             </div>                   
         </div>
     </footer>   
-
+    <div class = "container text-center">
+        <H2>Probability of Injury Severity</H2>
+        <span id ="prediction"></span>
+    </div>
+    <script src="js/ed-ml-app.js"></script>
 
 </body>
 </html>

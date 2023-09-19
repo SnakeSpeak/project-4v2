@@ -32,5 +32,7 @@ By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 </ul>
 
 <b>Additional Notes:</b></br>
-Due to the 100MB size limitation on github, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.
-Please extract them prior to running the codes.
+<ul>
+<li><a href="https://colab.research.google.com/drive/166QHlKrNrOjDFPomntyNQZRagPSyAO-2#scrollTo=7Wf242u8FTjR">Ed's Google Colab for the ML Training</a></li>
+<li>Due to the 100MB size limitation on github, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.
+Please extract them prior to running the codes.</li>

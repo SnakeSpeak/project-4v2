@@ -2,20 +2,24 @@
 <b>Project 4 of UCI Bootcamp</b></br>
 By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 
-<b>Part 1: Visualization on the Fatality Analysis Reporting System Data from the year 2021 by state based on:</b></br>
+<b>Part 1: Visualization on the Fatality Analysis Reporting System Data from the year 2021 by state based on:</b>
 <ul>
 <li>Weather Conditions</li>
 <li>Accident Types</li>
 <li>Lighting Conditions</li>
 </ul>
 
-<b>Part 2: Injury Prediction based on Crash Report Sampling System:</b></br>
+</br>
+
+<b>Part 2: Injury Prediction based on Crash Report Sampling System:</b>
 <ul>
 <li>Interactive Machine Learning Module</li>
 <li>Predicts injury severity based on user input</li>
 </ul>
 
-<b>Work Breakdown:</b></br>
+</br>
+
+<b>Work Breakdown:</b>
 <ul>
 <li>
 Logan Barnes:
@@ -40,13 +44,17 @@ Edmond Magpantay:
 </li>
 </ul>
 
-<b>Data Sources:</b></br>
+</br>
+
+<b>Data Sources:</b>
 <ul>
 <li><a href="https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/">FARS Data</a></li>
 <li><a href="https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/CRSS/">CRSS Data</a></li>
 </ul>
 
-<b>Resources used:</b></br>
+</br>
+
+<b>Resources used:</b>
 <ul>
 <li><a href="https://stackoverflow.com/questions/52996455/no-access-control-allow-origin-header-on-post-flask-api">CORS Error with Flask</a></li>
 <li><a href="https://stackoverflow.com/questions/63331232/how-to-aggregate-json-to-show-a-count-for-each-same-value">Aggregate count in Javascript</a></li>
@@ -56,7 +64,8 @@ Edmond Magpantay:
 <li><a href="https://github.com/tensorflow/tfjs">TensorFlow.js</a></li>
 </ul>
 
-<b>Additional Notes:</b></br>
+</br>
+<b>Additional Notes:</b>
 <ul>
 <li><a href="https://colab.research.google.com/drive/166QHlKrNrOjDFPomntyNQZRagPSyAO-2#scrollTo=7Wf242u8FTjR">Ed's Google Colab for the ML Training</a></li>
 <li>Due to the 100MB size limitation on github, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.

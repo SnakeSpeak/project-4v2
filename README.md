@@ -15,6 +15,28 @@ By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 <li>Predicts injury severity based on user input</li>
 </ul>
 
+<b>Work Breakdown:</b></br>
+<ul>
+<li>Logan Barnes:
+<ul>
+<li>Website HTML & CSS</li>
+<li>Cluster Map on Dashboard</li>
+</li>
+</ul>
+<li>Jessie Lee:
+<ul>
+<li>Database & Flask API</li>
+<li>Accident Types Graph on Dashboard</li>
+</ul>
+</li>
+<li>Edmond Magpantay:
+<ul>
+<li>Accident Count by Lighting Graph on Dashboard</li>
+<li>Machine Learning Model for Injury Prediction</li>
+</ul>
+</li>
+</ul>
+
 <b>Data Sources:</b></br>
 <ul>
 <li><a href="https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/">FARS Data</a></li>

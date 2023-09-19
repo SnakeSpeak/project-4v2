@@ -28,4 +28,9 @@ By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 <li><a href="https://www.w3schools.com/js/js_array_sort.asp">Sorting JavaScript Arrays</a></li>
 <li><a href="https://www.youtube.com/watch?v=6_w-Mb_78iY&list=PLm76kc4VPkn27kRYq-58COO5r5bQdrKyy">Leaflet ClusterMap</a></li>
 <li><a href="https://stackoverflow.com/questions/13148429/how-to-change-the-order-of-dataframe-columns">Changing the order of columns</a></li>
+<li><a href="https://github.com/tensorflow/tfjs">TensorFlow.js</a></li>
 </ul>
+
+<b>Additional Notes:</b></br>
+Due to the 100MB size limitation on github, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.
+Please extract them prior to running the codes.

@@ -18,19 +18,21 @@ By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 <b>Work Breakdown:</b></br>
 <ul>
 <li>
-<u>Logan Barnes:</u>
+Logan Barnes:
 <ul>
 <li>Website HTML & CSS</li>
 <li>Weather Condition Cluster Map on Dashboard</li>
 </li>
 </ul>
-<li><u>Jessie Lee:</u>
+<li>
+Jessie Lee:
 <ul>
 <li>Database & Flask API</li>
-<li>Accident Types Graph on Dashboard</li>
+<li>Frequency by Accident Types Graph on Dashboard</li>
 </ul>
 </li>
-<li><u>Edmond Magpantay:</u>
+<li>
+Edmond Magpantay:
 <ul>
 <li>Accident Count by Lighting Graph on Dashboard</li>
 <li>Machine Learning Model for Injury Prediction</li>

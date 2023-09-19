@@ -267,8 +267,8 @@ footer .fas, footer .far, footer .fab {
 		display: none;
    }
 
-	@media (max-width: 900px) {
-		.col-custom-5 {
+	@media (max-width: 1000px) {
+		.col-sm-2 {
 			width: 100%;
 			float: none;
 		}

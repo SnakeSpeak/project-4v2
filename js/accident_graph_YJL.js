@@ -1,5 +1,5 @@
 // Defining the URL for the API
-let url = "http://yleep4flask.azurewebsites.net//api/v1.0/accident_type"
+let url = "http://yleep4flask.azurewebsites.net/api/v1.0/accident_type"
 
 // Creating function to extract and graph data
 function graph(data,value){

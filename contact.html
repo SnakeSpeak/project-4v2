@@ -2,35 +2,40 @@
 
 <html lang="en">
 <head>
-    <title>Weather or Not</title>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <head>
+        <title>Weather or Not</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="img/car-burst-solid.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link href="style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
     <style>
     </style>
 </head>
 
 <body class="d-flex flex-column h-100">
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
-                <button class="navbar-toggle collapsed" data-target="#myNavBar" data-toggle="collapse" type="button">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="img/car.png"></a>
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-car-crash"></i>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavBar">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="dashboard.html">Dashboard</a></li>
                     <li><a href="injury_prediction.html">Injury Prediction</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -70,9 +75,9 @@
                     <div class="col-sm-4">
                         <a class="fas fa-laptop-code" style="font-size: 200px;"></a>
                         <div class="social-icons">
-                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Email"><i class="fas fa-envelope"></i></a></span>
-                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Github"><i class="fab fa-github"></i></a></span>
-                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="#" data-original-title="Linkedin"><i class="fab fa-linkedin"></i></a></span>
+                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="mailto:loganlbarnes@gmail.com" data-original-title="Email"><i class="fas fa-envelope"></i></a></span>
+                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="https://github.com/loganlbarnes" data-original-title="Github"><i class="fab fa-github"></i></a></span>
+                            <span><a data-toggle="tooltip" data-placement="bottom" title="" href="https://www.linkedin.com/in/loganlbarnes/" data-original-title="Linkedin"><i class="fab fa-linkedin"></i></a></span>
                         </div>
                         <h4>Logan Barnes</h4>
                         <p>Web Enhancement Virtuoso, elevating site aesthetics and seamlessly embedding advanced data-driven insights into the online interface.</p>
@@ -83,18 +88,10 @@
     
     <footer class="container-fluid text-center">
         <div class="row">
-            <div class="col-sm-6">
-                <h3>Weather or Not
-                <i class="fas fa-car" style="font-size: 45px;"></i></h3>
-            </div> 
-            <div class="col-sm-6">
-                <h3>Connect</h3>
-                <a href="#" class="fab fa-github"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-google"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-youtube"></a>
-            </div>                   
+            <div class="col-sm-12">
+                <h3>Connect
+                <a href="https://github.com/SnakeSpeak/project-4v2" class="fab fa-github"></a></h3>
+            </div>                  
         </div>
     </footer> 
 </body>

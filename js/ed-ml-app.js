@@ -32,7 +32,8 @@ async function predict() {
     var suspectSerInjury = (prediction.arraySync()[0][3] *100).toFixed(2) + "%"
     var fatalInjury = (prediction.arraySync()[0][4] *100).toFixed(2) + "%"
     console.log([noApparentInjury,possibleInjury,suspectMinInjury,suspectSerInjury,fatalInjury])
-    displayPrediction();
+
+    displayPrediction(noApparentInjury, possibleInjury, suspectMinInjury, suspectSerInjury, fatalInjury);
 
     var class1Element = document.getElementById("class1");
     class1Element.textContent = noApparentInjury.toLocaleString();
@@ -50,26 +51,13 @@ async function predict() {
     class5Element.textContent = fatalInjury.toLocaleString();
 }
 
-function displayPrediction() {
+function displayPrediction(noApparentInjury, possibleInjury, suspectMinInjury, suspectSerInjury, fatalInjury) {
+    document.getElementById("class1").textContent = noApparentInjury;
+    document.getElementById("class2").textContent = possibleInjury;
+    document.getElementById("class3").textContent = suspectMinInjury;
+    document.getElementById("class4").textContent = suspectSerInjury;
+    document.getElementById("class5").textContent = fatalInjury;
 
-    var nAIValue = window.noApparentInjury
-    var class1Element = document.getElementById("class1");
-    class1Element.textContent = nAIValue
-
-    var pIValue = window.possibleInjury
-    var class2Element = document.getElementById("class2");
-    class2Element.textContent = pIValue
-    
-    var sMIValue = window.suspectMinInjury
-    var class3Element = document.getElementById("class3");
-    class3Element.textContent = sMIValue
-
-    var sSIValue = window.suspectSerInjury
-    var class4Element = document.getElementById("class4");
-    class4Element.textContent = sSIValue
-
-    var fIValue = window.fatalInjury
-    var class5Element = document.getElementById("class5");
-    class5Element.textContent = fIValue
+    // Show the prediction section
+    document.getElementById("predictionSection").classList.remove("hidden");
 }
-

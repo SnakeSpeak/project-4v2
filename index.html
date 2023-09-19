@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Weather or Not</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="pathToYourIcon.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <style>
-
-  </style>
+    <title>Weather or Not</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/svg+xml" href="img/car-burst-solid.svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-inverse">
+       <!-- Navigation Bar -->
+       <nav class="navbar navbar-inverse">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavBar">
@@ -23,7 +23,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="img/car.png"></a>
+                <a class="navbar-brand" href="index.html">
+                    <i class="fas fa-car-crash"></i>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="myNavBar">
                 <ul class="nav navbar-nav navbar-right">
@@ -46,12 +48,15 @@
         <!-- Carousel item 1 -->
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <video class="img-fluid" src="img/traffic.mp4" autoplay loop muted></video>               
+                <video class="img-fluid" src="img/traffic.mp4" autoplay loop muted></video>
                 <div class="carousel-caption">
-                    <h1>weather or not</h1>
-                    <button type="button" class="btn btn-default">Get Started</button> 
+                    <h1>Crash Course</h1>
+                    <a href="dashboard.html">
+                        <button type="button" class="btn btn-default">Get Started</button>
+                    </a>
                 </div>
             </div>
+            
             
             <!-- Carousel item 2 -->
             <div class="item">
@@ -80,47 +85,45 @@
     <div class="container text-center">
         <H2>What We're Using</H2>
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-custom-5">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank">
-                    <i class="fab fa-html5" style="font-size: 200px;"></i>
+                    <i class="fab fa-html5" style="font-size: 150px;"></i>
                 </a>
                 <h4>HTML5</h4>
             </div>
-            <div class="col-sm-3">
+            <div class="col-custom-5">
                 <a href="https://github.com/twbs/bootstrap" target="_blank">
-                    <i class="fab fa-bootstrap" style="font-size: 200px;"></i>
+                    <i class="fab fa-bootstrap" style="font-size: 150px;"></i>
                 </a>
                 <h4>Bootstrap</h4>
             </div>
-            <div class="col-sm-3">
+            <div class="col-custom-5">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                    <i class="fab fa-css3-alt" style="font-size: 200px;"></i>
+                    <i class="fab fa-css3-alt" style="font-size: 150px;"></i>
                 </a>
                 <h4>CSS3</h4>
             </div>
-            <div class="col-sm-3">
+            <div class="col-custom-5">
                 <a href="https://flask.palletsprojects.com/en/2.3.x/" target="_blank">
-                    <img src="img/flask.png" alt="Flask" style="width: 175px; height: 175px; margin-bottom: 30px; margin-top: 30px;">
+                    <img src="img/flask.png" alt="Flask" class="hover-effect" style="width: 125px; height: 125px; margin-bottom: 30px; margin-top: 30px;">
                 </a>
                 <h4>Flask</h4>
+            </div>
+            <div class="col-custom-5">
+                <a href="https://github.com/twbs/bootstrap" target="_blank">
+                    <i class="fab fa-js" style="font-size: 150px;"></i>
+                </a>
+                <h4>JavaScript</h4>
             </div>
         </div>
     </div>
     
     <footer class="container-fluid text-center">
         <div class="row">
-            <div class="col-sm-6">
-                <h3>Weather or Not
-                <i class="fas fa-car" style="font-size: 45px;"></i></h3>
-            </div> 
-            <div class="col-sm-6">
-                <h3>Connect</h3>
-                <a href="#" class="fab fa-github"></a>
-                <a href="#" class="fab fa-twitter"></a>
-                <a href="#" class="fab fa-google"></a>
-                <a href="#" class="fab fa-linkedin"></a>
-                <a href="#" class="fab fa-youtube"></a>
-            </div>                   
+            <div class="col-sm-12">
+                <h3>Connect
+                <a href="https://github.com/SnakeSpeak/project-4v2" class="fab fa-github"></a></h3>
+            </div>                  
         </div>
     </footer>     
 

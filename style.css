@@ -1,4 +1,8 @@
-﻿.navbar {
+﻿.favicon-icon {
+    color: #008080; /* Change to your desired color */
+}
+
+.navbar {
 	margin-bottom: 0;
 	border-radius: 0;
 	background-color: #008080;
@@ -156,6 +160,10 @@ footer .fas, footer .far, footer .fab {
     color: #2965F1;
 }
 
+.fab.fa-js {
+    color: #efdc4f;
+}
+
 .fas.fa-database, .far.fa-database, .fab.fa-database {
     font-size: 10em;
     text-decoration: none;
@@ -206,6 +214,10 @@ footer .fas, footer .far, footer .fab {
     text-decoration: none;
 }
 
+.hover-effect:hover {
+    filter: grayscale(100%) brightness(1.2);
+}
+
 #popEst {
 	font-size: 24px;
 	font-weight: bold;
@@ -243,21 +255,39 @@ footer .fas, footer .far, footer .fab {
 	color: #808080;
   }
 
-@media(max-width: 900px) {
-	.fa{
-		font-size: 20px;
-		padding: 10px;
+  .col-custom-5 {
+    float: left; 
+    width: 20%; 
+    box-sizing: border-box;
+    padding-right: 15px;
+    padding-left: 15px;
 	}
-}
 
-@media (max-width: 600px){
-	.carousel-caption {
+   .hidden {
 		display: none;
+   }
+
+	@media (max-width: 900px) {
+		.col-custom-5 {
+			width: 100%;
+			float: none;
+		}
+	
+		.fa {
+			font-size: 20px;
+			padding: 10px;
+		}
 	}
-	#icon{
-		max-width: 150px;
+	
+	@media (max-width: 600px) {
+		.carousel-caption {
+			display: none;
+		}
+		#icon {
+			max-width: 150px;
+		}
+		h4 {
+			font-size: 1.7em;
+		}
 	}
-	h4{
-		font-size: 1.7em;
-	}
-}
+	

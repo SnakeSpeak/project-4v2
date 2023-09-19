@@ -112,7 +112,7 @@ function createWeatherMap(value) {
   clearMap();
 
   // Fetch weather data using promises
-  const url2 = "http://127.0.0.1:5000/api/v1.0/weather_conditions";
+  const url2 = "http://yleep4flask.azurewebsites.net//api/v1.0/weather_conditions";
   fetch(url2)
     .then(response => response.json())
     .then(data => {

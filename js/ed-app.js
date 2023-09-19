@@ -1,10 +1,10 @@
 const stateData = "Resources/gz_2010_us_040_00_500k.json"
-const statePop = d3.json("http://127.0.0.1:5000/api/v1.0/population")
+const statePop = d3.json("http://yleep4flask.azurewebsites.net//api/v1.0/population")
 
 
 function displayPop(state) {
     //parse out api data
-    d3.json("http://127.0.0.1:5000/api/v1.0/population")
+    d3.json("http://yleep4flask.azurewebsites.net//api/v1.0/population")
     .then(data => {
         //filter to only see selected state data
         let value = data.filter(result => result.state == state);
@@ -25,7 +25,7 @@ function displayPop(state) {
 
 function createLightingBarGraph(state) {
     //parse out api data
-    d3.json("http://127.0.0.1:5000//api/v1.0/lighting_conditions").then((data) => {
+    d3.json("http://yleep4flask.azurewebsites.net///api/v1.0/lighting_conditions").then((data) => {
         //filter to only see selected state data
         let value = data.filter(result => result.state == state)
         const lightingCounts = {};

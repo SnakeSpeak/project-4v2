@@ -2,6 +2,8 @@
 <b>Project 4 of UCI Bootcamp</b></br>
 By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
 
+</br>
+
 <b>Part 1: Visualization on the Fatality Analysis Reporting System Data from the year 2021 by state based on:</b>
 <ul>
 <li>Weather Conditions</li>
@@ -68,5 +70,5 @@ Edmond Magpantay:
 <b>Additional Notes:</b>
 <ul>
 <li><a href="https://colab.research.google.com/drive/166QHlKrNrOjDFPomntyNQZRagPSyAO-2#scrollTo=7Wf242u8FTjR">Ed's Google Colab for the ML Training</a></li>
-<li>Due to the 100MB size limitation on github, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.
+<li>Due to the 100MB size limitation on GitHub, the csv source file of person and vehicle for the years 2019, 2020 and 2021 were zipped for the git push.
 Please extract them prior to running the codes.</li>

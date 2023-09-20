@@ -1,10 +1,13 @@
 # Project 4
 <b>Project 4 of UCI Bootcamp</b></br>
 By: Logan Barnes, Jessie Lee, and Edmond Magpantay</br>
-<a href="https://snakespeak.github.io/project-4v2/">Website</a></br>
+</br>
+
+<a href="https://snakespeak.github.io/project-4v2/">Website</a>
 
 </br>
 
+</br>
 <b>Part 1: Visualization on the Fatality Analysis Reporting System Data from the year 2021 by state based on:</b>
 <ul>
 <li>Weather Conditions</li>
